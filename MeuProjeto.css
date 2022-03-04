@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+  font-family: "Inter", sans-serif;
+  font-family: "Island Moments", cursive;
+  font-family: "Ubuntu Mono", monospace;
+}
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgba(150, 224, 210, 0.61),
+      rgba(29, 129, 111, 0.61)
+    ),
+    url(http://www.riversidecampus.com/secondary/wp-content/uploads/2018/09/IMG_1635-940x300.jpg);
+
+  background-size: cover;
+  background-position: bottom;
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.main_text {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.header {
+  color: white;
+  text-transform: uppercase;
+}
+.header_first {
+  display: block;
+  font-size: 3rem;
+  letter-spacing: 20px;
+  animation-name: moveFromRight;
+  animation-duration: 6s;
+}
+
+.header_second {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 6.9px;
+  animation-name: moveFromBottom;
+  animation-duration: 6s;
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translate(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.card {
+  box-sizing: border-box;
+  width: 18rem;
+  height: 580px;
+}
+
+.directors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(29, 129, 111, 0.61);
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.pictures {
+  height: 400px;
+  width: px;
+}
